@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badge" x1="4" y1="3" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171B26"/>
+      <stop offset="1" stop-color="#08090C"/>
+    </linearGradient>
+    <linearGradient id="meteor" x1="7" y1="24" x2="25" y2="7" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="0.52" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.35" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#badge)" stroke="#2A3342"/>
+  <path d="M7 24.7C11.7 23.8 14.2 21.7 17.1 18.8C19.5 16.4 21.4 13.1 24.5 7.5" stroke="url(#meteor)" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M8 27C13.2 26 17.5 23.2 20.7 19.4" stroke="#FDBA74" stroke-opacity=".75" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="24.5" cy="7.5" r="2.2" fill="#FCD34D" filter="url(#glow)"/>
+</svg>
